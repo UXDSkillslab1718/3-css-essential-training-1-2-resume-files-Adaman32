@@ -21,13 +21,26 @@ Light blue = #9EC7D6
 	src: url(../fonts/fira-sans-light.otf);
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 
 /* Global Styles
 -------------------------------------*/
 
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	margin:0;
+}
+
 h1{	
-	font-size: 120px;
+	font-size: 130px;
 	text-align: left;
 	letter-spacing: 5px;
 }
@@ -35,14 +48,27 @@ h1{
 h2{
 	font-family: 'Proxima Nova', sans-serif;
 	font-style: italic;
-	font-size: 40px;
+	font-size: 75px;
 	text-decoration: overline;
-
+	margin-top: 0;
 }
 
-body {
+h3{
 	font-family: 'Proxima Nova', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 80px;
 }
+
+h4{
+	font-family: 'Proxima Nova', sans-serif;
+	font-size:30px;
+	margin-bottom: 0;
+	margin-top: 12px;
+}
+
+
 
 a {
 	color: #EABC85;
@@ -52,23 +78,50 @@ a:hover{
 	text-decoration: none;
 }
 
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+}
 
 /* Header and Footer
 ------------------------------------*/
+
+/*header*/
 header {
 	background: #0A2856;
 	color: #EA8B4D;
-}
-
-footer {
-	background: #171638;
-	color: #EA8B4D;
+	font-size: 20px;
 }
 
 header h1, header h2 {
 	color: white;
 	font-family: 'Proxima Nova', sans-serif;
+	margin: 0;
 }
+
+.profile-img{
+	width: 300px;
+	border-radius: 50%;
+	padding: 5px;
+	background: #EA8B4D
+}
+
+/*footer*/
+
+footer {
+	background: #171638;
+	color: #EA8B4D;
+	text-align: center;
+}
+
+.contact-info a{
+	font-family: 'Fira Sans Light', sans-serif;
+	padding:15px;
+	display: inline-block;
+}
+
+
 
 
 /* Experience
@@ -83,9 +136,6 @@ header h1, header h2 {
 	font-family: 'Fira Sans Light', sans-serif;
 }
 
-.description{
-	line-height: 1.3;
-}
 
 
 /* Education
@@ -97,5 +147,13 @@ header h1, header h2 {
 .education {
 	background: #EABC85;
 	color: #171638;
+	font-family: 'Fira Sans Light', sans-serif;
 }
 
+
+
+
+.description{
+	line-height: 1.3;
+	font-size: 24px;
+}
