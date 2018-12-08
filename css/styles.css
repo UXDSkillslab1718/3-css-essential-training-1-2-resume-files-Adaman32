@@ -8,15 +8,46 @@ Light blue = #9EC7D6
 
 */
 
+/* Font declaration
+------------------------------------*/
+
+@font-face{
+	font-family: 'Proxima Nova';
+	src: url(../fonts/proxima-nova.otf);
+}
+
+@font-face{
+	font-family: 'Fira Sans Light';
+	src: url(../fonts/fira-sans-light.otf);
+}
+
+
 
 /* Global Styles
 -------------------------------------*/
-body {
-	
+
+h1{	
+	font-size: 120px;
+	text-align: left;
+	letter-spacing: 5px;
 }
+
+h2{
+	font-family: 'Proxima Nova', sans-serif;
+	font-style: italic;
+	font-size: 40px;
+	text-decoration: overline;
+
+}
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+}
+
 a {
 	color: #EABC85;
 }
+
 a:hover{
 	text-decoration: none;
 }
@@ -36,6 +67,7 @@ footer {
 
 header h1, header h2 {
 	color: white;
+	font-family: 'Proxima Nova', sans-serif;
 }
 
 
@@ -48,6 +80,11 @@ header h1, header h2 {
 .experience{
 	background: #EA8B4D;
 	color: #171638;
+	font-family: 'Fira Sans Light', sans-serif;
+}
+
+.description{
+	line-height: 1.3;
 }
 
 
