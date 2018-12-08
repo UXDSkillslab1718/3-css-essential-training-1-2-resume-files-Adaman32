@@ -1,5 +1,64 @@
+/* Colors
+-----------------------------------
+Dark Blue = #171638
+Blue = #0A2856
+Light orange = #EABC85
+Orange = #EA8B4D
+Light blue = #9EC7D6
+
+*/
+
+
+/* Global Styles
+-------------------------------------*/
 body {
-	background: lightblue; 
-
-
+	
 }
+a {
+	color: #EABC85;
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+/* Header and Footer
+------------------------------------*/
+header {
+	background: #0A2856;
+	color: #EA8B4D;
+}
+
+footer {
+	background: #171638;
+	color: #EA8B4D;
+}
+
+header h1, header h2 {
+	color: white;
+}
+
+
+/* Experience
+-----------------------------------*/
+#experience{
+	color:white;
+}
+
+.experience{
+	background: #EA8B4D;
+	color: #171638;
+}
+
+
+/* Education
+------------------------------------*/
+#education{
+	color:white;
+}
+
+.education {
+	background: #EABC85;
+	color: #171638;
+}
+
