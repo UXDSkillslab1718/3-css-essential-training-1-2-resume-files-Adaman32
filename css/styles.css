@@ -47,6 +47,7 @@ h1{
 h2{
 	font-family: 'Proxima Nova', sans-serif;
 	font-style: italic;
+	color: white;
 	font-size: 75px;
 	text-decoration: overline;
 	margin-top: 0;
@@ -81,17 +82,6 @@ a:hover{
 	text-decoration: none;
 }
 
-.content-wrap{
-	max-width: 950px;
-	margin: 0 auto;
-	padding: 50px;
-}
-
-.lighter{
-	color:#0A2856;
-	font-style: italic;
-}
-
 ul li{
 	list-style: circle;
 }
@@ -99,6 +89,26 @@ ul li{
 ul li:nth-child(2n+2){
 	color:#0A2856;
 	list-style: disc;
+}
+
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 65px 50px;
+	overflow: hidden;
+}
+
+.lighter{
+	color:#0A2856;
+	font-style: italic;
+}
+
+.btn {
+	text-decoration: none;
+	background: #171638;
+	color: #EA8B4D;
+	padding: 10px;
+	display: inline-block;
 }
 
 
@@ -110,6 +120,8 @@ header {
 	background: #0A2856;
 	color: #EA8B4D;
 	font-size: 20px;
+	padding-top: 50px;
+	position: relative;
 }
 
 header h1, header h2 {
@@ -129,6 +141,15 @@ header h2 {
 	background: #EA8B4D
 }
 
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: ridge;
+	border-color: #EA8B4D;
+	border-bottom: none;
+}
+
 /*footer*/
 
 footer {
@@ -139,6 +160,7 @@ footer {
 
 footer h2 {
 	margin:0;
+	color: #EA8B4D;
 }
 
 .contact-info a{
@@ -148,13 +170,28 @@ footer h2 {
 }
 
 
+/* Navigation
+----------------------------------*/
+nav{
+	text-align: center;
+	background: #171638;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	outline-style: ridge;
+	outline-color: #EA8B4D;
+}
+nav a{
+	display: inline-block;
+	padding: 20px 80px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 
 
 /* Experience
 -----------------------------------*/
-#experience{
-	color:white;
-}
 
 .experience{
 	background: #EA8B4D;
@@ -170,9 +207,6 @@ h3 ~ h4 {
 
 /* Education
 ------------------------------------*/
-#education{
-	color:white;
-}
 
 .education {
 	background: #EABC85;
