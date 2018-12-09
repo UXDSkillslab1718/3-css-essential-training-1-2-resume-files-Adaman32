@@ -30,7 +30,6 @@ html {
 }
 
 
-
 /* Global Styles
 -------------------------------------*/
 
@@ -57,18 +56,22 @@ h3{
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 50px;
 	font-weight: 700;
-	margin-bottom: 30px;
-	margin-top: 80px;
+	margin-bottom: 0;
+	margin-top: 120px;
+
 }
 
 h4{
 	font-family: 'Proxima Nova', sans-serif;
-	font-size:30px;
+	font-size:25px;
+	font-weight: 600;
 	margin-bottom: 0;
 	margin-top: 12px;
 }
 
-
+h2 + h3{
+	margin:0;
+}
 
 a {
 	color: #EABC85;
@@ -83,6 +86,21 @@ a:hover{
 	margin: 0 auto;
 	padding: 50px;
 }
+
+.lighter{
+	color:#0A2856;
+	font-style: italic;
+}
+
+ul li{
+	list-style: circle;
+}
+
+ul li:nth-child(2n+2){
+	color:#0A2856;
+	list-style: disc;
+}
+
 
 /* Header and Footer
 ------------------------------------*/
@@ -100,6 +118,10 @@ header h1, header h2 {
 	margin: 0;
 }
 
+header h2 {
+	font-weight: 500;
+}
+
 .profile-img{
 	width: 300px;
 	border-radius: 50%;
@@ -113,6 +135,10 @@ footer {
 	background: #171638;
 	color: #EA8B4D;
 	text-align: center;
+}
+
+footer h2 {
+	margin:0;
 }
 
 .contact-info a{
@@ -134,6 +160,10 @@ footer {
 	background: #EA8B4D;
 	color: #171638;
 	font-family: 'Fira Sans Light', sans-serif;
+}
+
+h3 ~ h4 {
+	margin: 0;
 }
 
 
