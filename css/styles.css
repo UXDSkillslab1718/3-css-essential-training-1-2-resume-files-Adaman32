@@ -165,7 +165,8 @@ footer h2 {
 
 .contact-info a{
 	font-family: 'Fira Sans Light', sans-serif;
-	padding:15px;
+	font-size: 40px;
+	padding:30px;
 	display: inline-block;
 }
 
@@ -194,7 +195,8 @@ nav a{
 -----------------------------------*/
 
 .experience{
-	background: #EA8B4D;
+	/*background: #EA8B4D;*/
+	background: linear-gradient(rgba(234, 139, 77,1),rgba(234, 188, 133,1));
 	color: #171638;
 	font-family: 'Fira Sans Light', sans-serif;
 }
@@ -209,7 +211,10 @@ h3 ~ h4 {
 ------------------------------------*/
 
 .education {
-	background: #EABC85;
+	/*background: #EABC85;*/
+	background: linear-gradient(rgba(234, 139, 77,1),rgba(234, 188, 133,0.85)),
+				url(../images/thuas.jpg) no-repeat fixed;
+	background-size: cover; 
 	color: #171638;
 	font-family: 'Fira Sans Light', sans-serif;
 }
